@@ -4,7 +4,7 @@
 
 ### Run Publisher -> Client -> Consumer ignite nodes sequentially
 
-This is simple examples about synchronization in the Ignite Nodes
+This is simple example about synchronization in the Ignite Nodes
 
 In this example:
 * I will create datas in the (Publisher node) cache (1.000.000 numbers)
