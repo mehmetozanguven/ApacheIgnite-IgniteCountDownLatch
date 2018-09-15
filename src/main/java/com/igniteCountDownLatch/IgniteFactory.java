@@ -8,13 +8,9 @@ import org.apache.ignite.configuration.IgniteConfiguration;
 public class IgniteFactory {
     private IgniteFactory() {}
 
-    private static String DEFAULT_CONFIG_PATH_NOVA ="/path/to/apache-ignite-fabric-2.5.0-bin" +
+    private static String DEFAULT_CONFIG_PATH ="/path/to/apache-ignite-fabric-2.5.0-bin" +
             "/examples/config/example-ignite.xml";
 
-
-    private static String DEFAULT_CONFIG_PATH_MEHMETOZAN = "/path/to/" +
-            "apache-ignite-fabric-2.5.0-bin" +
-            "/examples/config/example-ignite.xml";
 
     public static Ignite createIgniteNodeWithDefaultConfiguration(String nodeType){
         if (nodeType.equalsIgnoreCase("c")){
@@ -24,7 +20,7 @@ public class IgniteFactory {
 
         try{
             System.out.println("Ignite node have created successfully");
-            return Ignition.start(DEFAULT_CONFIG_PATH_NOVA);
+            return Ignition.start(DEFAULT_CONFIG_PATH);
 
         }
         catch (IgniteException e){
