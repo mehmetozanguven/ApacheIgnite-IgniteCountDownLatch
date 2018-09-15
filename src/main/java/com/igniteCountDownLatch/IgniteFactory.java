@@ -8,14 +8,12 @@ import org.apache.ignite.configuration.IgniteConfiguration;
 public class IgniteFactory {
     private IgniteFactory() {}
 
-    private static String DEFAULT_CONFIG_PATH_NOVA ="/home/nova-stats/Desktop" +
-            "/ApacheIgniteInstallationFolder/apache-ignite-fabric-2.5.0-bin" +
+    private static String DEFAULT_CONFIG_PATH_NOVA ="/path/to/apache-ignite-fabric-2.5.0-bin" +
             "/examples/config/example-ignite.xml";
 
 
-    private static String DEFAULT_CONFIG_PATH_MEHMETOZAN = "/home/mehmetozanguven/Desktop" +
-            "/ApacheIgnite" +
-            "/ApacheIgniteInstallationFolder/apache-ignite-fabric-2.5.0-bin" +
+    private static String DEFAULT_CONFIG_PATH_MEHMETOZAN = "/path/to/" +
+            "apache-ignite-fabric-2.5.0-bin" +
             "/examples/config/example-ignite.xml";
 
     public static Ignite createIgniteNodeWithDefaultConfiguration(String nodeType){
